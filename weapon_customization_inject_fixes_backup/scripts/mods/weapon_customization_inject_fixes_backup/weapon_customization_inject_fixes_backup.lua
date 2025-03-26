@@ -23,6 +23,7 @@ mod.on_all_mods_loaded = function()
     -- ######################
     -- Bolter
     table.prepend( wc.anchors.bolter_p1_m1.fixes, {
+        -- Slims out combi flamer and moves it down a notch
         {   dependencies =  { "syn_plasma_combi_01",
             },
             underbarrel =   { position = vector3_box(0.0, 0.195, -0.0015), rotation = vector3_box(0, 0, 0), scale = vector3_box(0.94, 0.94, 0.5)},
@@ -30,6 +31,7 @@ mod.on_all_mods_loaded = function()
     })
     -- Laspistol
     table.prepend( wc.anchors.laspistol_p1_m1.fixes, {
+        -- Moves back plasma barrel to integrate it more proportionally
         {   dependencies =  { "plas_barrel_01|plas_barrel_02|plas_barrel_03",
             },
             --muzzle =        { offset = true, position = vector3_box(0, 0.416, 0.032), rotation = vector3_box(0, 0, 0), scale = vector3_box(0.867, 1.84, 1.1)},
@@ -40,6 +42,7 @@ mod.on_all_mods_loaded = function()
     })
     -- Recon Lasgun
     table.prepend( wc.anchors.lasgun_p3_m1.fixes, {
+        -- Moves chainsword bayonet down to avoid blocking the barrel
         {   dependencies =  { "syn_2hchainsword_bayonet_01|syn_2hchainsword_bayonet_02|syn_2hchainsword_bayonet_03|syn_2hchainsword_bayonet_04|syn_2hchainsword_bayonet_05|syn_2hchainsword_bayonet_06|syn_2hchainsword_bayonet_07", 
             },
             bayonet =       { offset = true, position = vector3_box(0, -0.061, -0.078), rotation = vector3_box(-90, 0, 0), scale = vector3_box(0.75, 0.75, 0.75),},
@@ -50,6 +53,7 @@ mod.on_all_mods_loaded = function()
     -- ######################
     -- Heavy Sword
     table.prepend( wc.anchors.combatsword_p2_m1.fixes, {
+        -- Centers on this grip
         {   dependencies = {"ogryn_mt_blade_01",
                 "falchion_grip_01",
             },
@@ -58,6 +62,7 @@ mod.on_all_mods_loaded = function()
     })
     -- Chain Axe
     table.prepend( wc.anchors.chainaxe_p1_m1.fixes, {
+        -- Moves up shovel head to not be tiny
         {   dependencies = {"shovel_head_mt_01|shovel_head_mt_02|shovel_head_mt_03|shovel_head_mt_04|shovel_head_mt_05",
             },
             blade = {position = vector3_box(0, 0, 0.17), rotation = vector3_box(-1, 0, 0), scale = vector3_box(1, 1, 1), node = 1},
@@ -66,6 +71,7 @@ mod.on_all_mods_loaded = function()
     })
     -- Knife
     table.prepend( wc.anchors.combatknife_p1_m1.fixes, {
+        -- Moves up blade to fix minor clipping
         {   dependencies = {"ogrynbladehandle_01",
                 "knife_body_03",
             },
@@ -76,6 +82,7 @@ mod.on_all_mods_loaded = function()
     })
     -- Power Sword
     table.prepend(wc.anchors.powersword_p1_m1.fixes, {
+        -- Turns sabre grips into pseudo 2handed grips
         {   dependencies = { "2h_chain_sword_mt_body_01|2h_chain_sword_mt_body_02|2h_chain_sword_mt_body_03|2h_chain_sword_mt_body_04",
                 --"sabre_mt_grip_01|sabre_mt_grip_02|sabre_mt_grip_03|sabre_mt_grip_04|sabre_mt_grip_05",
                 "sabre_grip_01|sabre_grip_02|sabre_grip_03|sabre_grip_04|sabre_grip_05",
@@ -88,6 +95,7 @@ mod.on_all_mods_loaded = function()
     })
     -- Force Greatsword
     table.prepend(wc.anchors.forcesword_2h_p1_m1.fixes, {
+        -- Moves up gap and makes crossguard smaller
         {   dependencies = {"2h_force_sword_hilt_01",
                 "power_sword_grip_04",
                 "2h_power_maul_pommel_03",
