@@ -40,12 +40,31 @@ mod.on_all_mods_loaded = function()
             stock =         { offset = true, position = vector3_box(0, 0.007, 0.01), rotation = vector3_box(-36, 0, 0), scale = vector3_box(1, 2.665, 1)}, 
         },  
     })
+    -- Helbore Lasgun
+    table.prepend( wc.anchors.lasgun_p2_m1.fixes, {
+        -- Moves tacax bayonet forwards and makes it smaller
+        {   dependencies =  { "hatchet_head_mt_01|hatchet_head_mt_02|hatchet_head_mt_03|hatchet_head_mt_04|hatchet_head_mt_05", 
+            },
+            bayonet = {offset = true, position = vector3_box(0, 0.198, -0.048), rotation = vector3_box(-90, 0, 0), scale = vector3_box(1, 0.5, 0.5)},
+        },
+        -- Moves Syn's bipod back for MT Stubber (which I moved down)
+        {   dependencies =  { "singlestubber_barrel_01|singlestubber_barrel_02|singlestubber_barrel_03", 
+                "bipod_center_01"
+            },
+            barrel = {offset = true, position = vector3_box(0, -0.07, -0.017), rotation = vector3_box(0, 0, 0), scale = vector3_box(.25, .5, .25)},
+            bipod_center =  { offset = false, parent = "barrel", position = vector3_box(0.0, 0.6, -0.05), rotation = vector3_box(0, 0, 90), scale = vector3_box(0.35, 0.8, 0.75)},
+        },
+    })
     -- Recon Lasgun
     table.prepend( wc.anchors.lasgun_p3_m1.fixes, {
         -- Moves chainsword bayonet down to avoid blocking the barrel
+        {   dependencies =  { "syn_chainsword_bayonet_01|syn_chainsword_bayonet_02|syn_chainsword_bayonet_03|syn_chainsword_bayonet_04|syn_chainsword_bayonet_05|syn_chainsword_bayonet_06|syn_chainsword_bayonet_07|syn_chainsword_bayonet_08|syn_chainsword_bayonet_09|syn_chainsword_bayonet_10", 
+            },
+            bayonet = {offset = false, position = vector3_box(0, -0.073, -0.086), rotation = vector3_box(-90, 0, 0), scale = vector3_box(0.75, 0.75, 0.75)},
+        },
         {   dependencies =  { "syn_2hchainsword_bayonet_01|syn_2hchainsword_bayonet_02|syn_2hchainsword_bayonet_03|syn_2hchainsword_bayonet_04|syn_2hchainsword_bayonet_05|syn_2hchainsword_bayonet_06|syn_2hchainsword_bayonet_07", 
             },
-            bayonet =       { offset = true, position = vector3_box(0, -0.061, -0.078), rotation = vector3_box(-90, 0, 0), scale = vector3_box(0.75, 0.75, 0.75),},
+            bayonet =       { offset = true, position = vector3_box(0, 0.361, -0.006), rotation = vector3_box(-90, 0, 0), scale = vector3_box(0.75, 0.75, 0.75),},
         },  
     })
     -- ######################
