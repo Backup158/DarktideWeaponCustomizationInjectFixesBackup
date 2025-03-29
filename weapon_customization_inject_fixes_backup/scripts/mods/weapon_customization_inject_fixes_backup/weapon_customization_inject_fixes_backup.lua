@@ -51,8 +51,8 @@ mod.on_all_mods_loaded = function()
         {   dependencies =  { "singlestubber_barrel_01|singlestubber_barrel_02|singlestubber_barrel_03", 
                 "bipod_center_01"
             },
-            barrel =        { offset = true, position = vector3_box(0, -0.008, -0.017), rotation = vector3_box(0, 0, 0), scale = vector3_box(.36, .5, .36)},
-            bipod_center =  { offset = false, parent = "barrel", position = vector3_box(0.0, 0.6, -0.05), rotation = vector3_box(0, 0, 90), scale = vector3_box(0.35, 0.8, 0.75)},
+            barrel =        { offset = true, position = vector3_box(0, -0.018, -0.017), rotation = vector3_box(0, 0, 0), scale = vector3_box(.36, .5, .36)},
+            bipod_center =  { offset = false, parent = "barrel", position = vector3_box(0.0, 0.6, -0.05), rotation = vector3_box(0, 0, 90), scale = vector3_box(0.5, 0.8, 0.75)},
         },
     })
     -- Recon Lasgun
