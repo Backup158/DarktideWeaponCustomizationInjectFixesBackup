@@ -60,7 +60,7 @@ mod.on_all_mods_loaded = function()
         -- Moves chainsword bayonet down to avoid blocking the barrel
         {   dependencies =  { "syn_chainsword_bayonet_01|syn_chainsword_bayonet_02|syn_chainsword_bayonet_03|syn_chainsword_bayonet_04|syn_chainsword_bayonet_05|syn_chainsword_bayonet_06|syn_chainsword_bayonet_07|syn_chainsword_bayonet_08|syn_chainsword_bayonet_09|syn_chainsword_bayonet_10", 
             },
-            bayonet = {offset = false, position = vector3_box(0, -0.073, -0.086), rotation = vector3_box(-90, 0, 0), scale = vector3_box(0.75, 0.75, 0.75)},
+            bayonet = {offset = false, position = vector3_box(0, 0.395, -0.006), rotation = vector3_box(-90, 0, 0), scale = vector3_box(0.75, 0.75, 0.75)},
         },
         {   dependencies =  { "syn_2hchainsword_bayonet_01|syn_2hchainsword_bayonet_02|syn_2hchainsword_bayonet_03|syn_2hchainsword_bayonet_04|syn_2hchainsword_bayonet_05|syn_2hchainsword_bayonet_06|syn_2hchainsword_bayonet_07", 
             },
